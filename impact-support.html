@@ -18,26 +18,69 @@
 </head>
 
 <body id="imuo7c" class="gjs-t-body cls-jrp1ws">
-  <header id="i9n00r" class="site-header">
-    <div id="i0h09k" class="header-container"><a href="./impact-support.html" id="iwmaxo"
-        class="gjs-t-link brand-link"><img loading="lazy" alt="Organization mark"
-          src="https://api.iconify.design/lucide-heart.svg?color=%23136f63" id="iudxlg" class="brand-icon" /><span
-          id="i1zge3" class="brand-name">Woanda Community Church</span></a>
-      <div class="navbar" id="i932dc">
-        <div data-gjs="navbar" class="navbar-cnt" id="iqvqec">
-          <div id="io8xwb" class="navbar-menu-toggle">
-            <div data-type-icon class="gjs-icon" id="iq95ec"><svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24">
-                <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path>
-              </svg></div>
-          </div>
-                  <nav id="iiqk4-nav-desktop-2" aria-label="Primary" class="primary-navigation"><a href="./index.html" id="ibny9-2"
+    <header id="iiqk4" class="site-header">
+    <div id="ibv35" class="header-container"><a href="./impact-support.html" id="ipzbg"
+        aria-label="Community Care Initiative – Home" class="gjs-t-link brand-link"><img
+          src="https://api.iconify.design/lucide-church.svg?color=%23136f63" alt="Church icon" width="36" height="36"
+          loading="lazy" id="iv8sm" class="brand-icon" /><span id="ian2s" class="brand-name">Woanda Community
+          Church</span></a><!-- Desktop navigation -->
+      <nav id="iiqk4-nav-desktop-2" aria-label="Primary" class="primary-navigation"><a href="./index.html" id="ibny9-2"
           class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html" id="igl33-2"
           class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a href="./donations.html" id="ijekps-2"
           aria-label="Donate to Woanda Community Church" class="gjs-t-button nav-donate-button">Donate</a></nav>
-        </div>
+      <!-- Mobile toggle button -->
+    </div><!-- Mobile collapsible panel -->
+    <div id="iiqk4-panel" aria-hidden="true" class="mobile-nav-panel">
+      <div id="ibqt5" class="mobile-nav-inner">
+        <div role="menu" aria-label="Primary mobile" id="imm5n" class="mobile-nav-list"><a href="./index.html"
+            role="menuitem" id="ik7zx" class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html"
+            role="menuitem" id="iyfzr" class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a
+            href="./donations.html" role="menuitem" id="i2vql" aria-label="Donate to Woanda Community Church"
+            class="gjs-t-button nav-donate-button">Donate</a></div>
       </div>
     </div>
+    <script id="ik2yv">
+      (function () {
+        var header = document.getElementById('iiqk4');
+        var toggle = document.getElementById('iiqk4-toggle');
+        var panel = document.getElementById('iiqk4-panel');
+        var icon = toggle ? toggle.querySelector('.mobile-menu-icon') : null;
+
+        if (!toggle || !panel) return;
+
+        function setState(open) {
+          if (open) {
+            header.classList.add('is-open');
+            toggle.setAttribute('aria-expanded', 'true');
+            panel.setAttribute('aria-hidden', 'false');
+            if (icon) icon.src = 'https://api.iconify.design/lucide-x.svg?color=%230f172a';
+            toggle.setAttribute('aria-label', 'Close menu');
+          } else {
+            header.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            panel.setAttribute('aria-hidden', 'true');
+            if (icon) icon.src = 'https://api.iconify.design/lucide-menu.svg?color=%230f172a';
+            toggle.setAttribute('aria-label', 'Open menu');
+          }
+        }
+
+        toggle.addEventListener('click', function () {
+          var open = header.classList.contains('is-open');
+          setState(!open);
+        });
+
+        // Close on ESC
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && header.classList.contains('is-open')) {
+            setState(false);
+            toggle.focus();
+          }
+        });
+
+        // Ensure correct initial state
+        setState(false);
+      })();
+    </script>
   </header>
   <main id="izd3nn">
     <section class="hero-section">
