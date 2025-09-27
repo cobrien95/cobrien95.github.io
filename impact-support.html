@@ -269,6 +269,12 @@
         var n, t = this, e = 'gjs-collapse', a = 'max-height', o = 0, i = function () { var n = document.createElement('void'), t = { transition: 'transitionend', OTransition: 'oTransitionEnd', MozTransition: 'transitionend', WebkitTransition: 'webkitTransitionEnd' }; for (var e in t) if (void 0 !== n.style[e]) return t[e] }(), r = function (n) { o = 1; var t = function (n) { var t = window.getComputedStyle(n), e = t.display, o = parseInt(t[a]); if ('none' !== e && 0 !== o) return n.offsetHeight; n.style.height = 'auto', n.style.display = 'block', n.style.position = 'absolute', n.style.visibility = 'hidden'; var i = n.offsetHeight; return n.style.height = '', n.style.display = '', n.style.position = '', n.style.visibility = '', i }(n), e = n.style; e.display = 'block', e.transition = "".concat(a, " 0.25s ease-in-out"), e.overflowY = 'hidden', '' == e[a] && (e[a] = 0), 0 == parseInt(e[a]) ? (e[a] = '0', setTimeout((function () { e[a] = t + 'px' }), 10)) : e[a] = '0' }; e in t || t.addEventListener('click', (function (e) { if (e.preventDefault(), !o) { var l = t.closest("[data-gjs=navbar]"), c = null == l ? void 0 : l.querySelector("[data-gjs=navbar-items]"); c && r(c), n || (null == c || c.addEventListener(i, (function () { o = 0; var n = c.style; 0 == parseInt(n[a]) && (n.display = '', n[a] = '') })), n = 1) } })), t[e] = 1
       }.bind(items[i]))();
     }</script>
+  <footer class="site-footer">
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-container"><small class="footer-copyright">© 2025 Woanda Community Church. All rights
+          reserved.</small></div>
+    </div>
+  </footer>
 </body>
 
 </html>
