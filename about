@@ -21,8 +21,8 @@
           loading="lazy" id="brand-icon" class="brand-icon" /><span id="brand-name" class="brand-name">Woanda Community
           Church</span></a><!-- Desktop navigation -->
       <nav id="primary-nav-desktop" aria-label="Primary" class="primary-navigation"><a href="./index.html"
-          id="nav-link-about" class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html"
-          id="nav-link-impact" class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a
+          id="nav-link-about" class="gjs-t-link nav-link-about nav-link-active">About</a><a href="./impact-support.html"
+          id="nav-link-impact" class="gjs-t-link nav-link-impact">Impact &amp; Support</a><a
           href="./donations.html" id="nav-link-donate" aria-label="Donate to Woanda Community Church"
           class="gjs-t-button nav-donate-button">Donate</a></nav>
       <!-- Mobile toggle button -->
@@ -35,9 +35,9 @@
     <div id="iiqk4-panel" aria-hidden="true" class="mobile-nav-panel">
       <div id="mobile-nav-inner" class="mobile-nav-inner">
         <div role="menu" aria-label="Primary mobile" id="mobile-nav-list" class="mobile-nav-list"><a href="./index.html"
-            role="menuitem" id="mobile-nav-about" class="gjs-t-link nav-link-about">About</a><a
+            role="menuitem" id="mobile-nav-about" class="gjs-t-link nav-link-about nav-link-active">About</a><a
             href="./impact-support.html" role="menuitem" id="mobile-nav-impact"
-            class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a href="./donations.html" role="menuitem"
+            class="gjs-t-link nav-link-impact">Impact &amp; Support</a><a href="./donations.html" role="menuitem"
             id="mobile-nav-donate" aria-label="Donate to Woanda Community Church"
             class="gjs-t-button nav-donate-button">Donate</a></div>
       </div>
