@@ -1,0 +1,12 @@
+# GitHub Pages configuration
+permalink: pretty
+
+# Set default page
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Custom 404 page
+404: about.html
