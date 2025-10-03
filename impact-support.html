@@ -18,7 +18,7 @@
 </head>
 
 <body id="imuo7c" class="gjs-t-body cls-jrp1ws">
-    <header id="iiqk4" class="site-header">
+  <header id="iiqk4" class="site-header">
     <div id="ibv35" class="header-container"><a href="./impact-support.html" id="ipzbg"
         aria-label="Community Care Initiative – Home" class="gjs-t-link brand-link"><img
           src="https://api.iconify.design/lucide-church.svg?color=%23136f63" alt="Church icon" width="36" height="36"
@@ -29,6 +29,11 @@
           class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a href="./donations.html" id="ijekps-2"
           aria-label="Donate to Woanda Community Church" class="gjs-t-button nav-donate-button">Donate</a></nav>
       <!-- Mobile toggle button -->
+      <button id="iiqk4-toggle" class="mobile-menu-button" type="button" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <img src="https://api.iconify.design/lucide-menu.svg?color=%230f172a" alt="Menu" width="20" height="20"
+          class="mobile-menu-icon" />
+      </button>
     </div><!-- Mobile collapsible panel -->
     <div id="iiqk4-panel" aria-hidden="true" class="mobile-nav-panel">
       <div id="ibqt5" class="mobile-nav-inner">
@@ -104,9 +109,13 @@
       <div id="i2oml5" class="top-stats-container">
         <div id="i0wj5u" class="gjs-t-border stat-card-children"><img loading="lazy" alt="Children supported icon"
             src="https://api.iconify.design/lucide-users.svg?color=%23136f63" class="stat-icon-children" />
-          <div class="stat-content-children"><strong id="idsfvp" class="stat-value-children">Current Reach</strong><span
-              id="impomz" class="stat-label-children">Supporting 50 orphaned and vulnerable children with established
-              programming including education, healthcare, and nutrition.</span></div>
+          <div class="stat-content-children">
+            <h3 id="idsfvp" class="stat-value-children">Current Reach</h3>
+            <span id="impomz" class="stat-label-children">
+              Supporting 50 orphaned and vulnerable children with established
+              programming including education, healthcare, and nutrition.
+            </span>
+          </div>
         </div>
         <div class="gjs-t-border stat-card-cbo"><img loading="lazy" alt="Registered CBO icon"
             src="https://api.iconify.design/lucide-badge-check.svg?color=%23136f63" class="stat-icon-cbo" />
@@ -115,27 +124,31 @@
             </strong><span id="idx98x" class="stat-label-cbo">Maintaining children's connection to Suba and Luo heritage
               while providing modern education and opportunities.</span></div>
         </div>
-        <div id="ij7lf2" class="gjs-t-border stat-card-budget"><img loading="lazy" alt="Budget icon"
+        <div id="ij7lf2" class="gjs-t-border stat-card-children"><img loading="lazy" alt="Budget icon"
             src="https://api.iconify.design/lucide-wallet.svg?color=%23136f63" class="stat-icon-budget" />
           <div class="stat-content-budget"><strong id="idp477" class="stat-value-budget">
               <h3 id="ireb64">Educational Achievement</h3>
-            </strong><span id="izz4c8" class="stat-label-budget">All eligible children enrolled in formal schooling with
+            </strong><span id="izz4c8" class="stat-label-children">All eligible children enrolled in formal schooling
+              with
               full support for school fees, uniforms, supplies, and educational materials.</span></div>
         </div>
-        <div id="ixdrs1" class="gjs-t-border stat-card-budget"><img loading="lazy" alt="Budget icon"
-            src="https://api.iconify.design/lucide-wallet.svg?color=%23136f63" class="stat-icon-budget" />
+        <div id="stat-card-community-empowerment" class="gjs-t-border stat-card-children"><img loading="lazy"
+            alt="Budget icon" src="https://api.iconify.design/lucide-wallet.svg?color=%23136f63"
+            class="stat-icon-budget" />
           <div class="stat-content-budget"><strong id="iu4ga2" class="stat-value-budget">Community
               Empowerment</strong><span id="im9rrk" class="stat-label-budget">Training local youth volunteers in
               childcare, mentorship, and leadership to build sustainable local capacity.</span></div>
         </div>
-        <div id="i7og9o" class="gjs-t-border stat-card-budget"><img loading="lazy" alt="Budget icon"
-            src="https://api.iconify.design/lucide-wallet.svg?color=%23136f63" class="stat-icon-budget" />
+        <div id="stat-card-longterm-outcomes" class="gjs-t-border stat-card-children"><img loading="lazy"
+            alt="Budget icon" src="https://api.iconify.design/lucide-wallet.svg?color=%23136f63"
+            class="stat-icon-budget" />
           <div class="stat-content-budget"><strong id="iihtri" class="stat-value-budget">Long-term
               Outcomes</strong><span id="iglhuk" class="stat-label-budget">Preparing children to become self-reliant
               community members through vocational training and life skills development.</span></div>
         </div>
-        <div id="i8qmto" class="gjs-t-border stat-card-budget"><img loading="lazy" alt="Budget icon"
-            src="https://api.iconify.design/lucide-wallet.svg?color=%23136f63" class="stat-icon-budget" />
+        <div id="stat-card-community-presence" class="gjs-t-border stat-card-budget"><img loading="lazy"
+            alt="Budget icon" src="https://api.iconify.design/lucide-wallet.svg?color=%23136f63"
+            class="stat-icon-budget" />
           <div class="stat-content-budget"><strong id="iz33yh" class="stat-value-budget">Community
               Presence</strong><span id="iu1i8s" class="stat-label-budget">Operating as a registered CBO in Mfangano
               Island, serving Suba and Luo speaking communities.</span></div>
@@ -150,60 +163,56 @@
               src="https://api.iconify.design/lucide-handshake.svg?color=%23136f63" class="how-to-support-icon" />
             <h2 id="ioj2m5" class="gjs-t-h2">How to Support</h2>
           </div>
-          <div class="how-to-support-actions"><a href="#transparency" class="support-action-transparency">View
-              Transparency</a></div>
         </div>
         <div id="ihvtcp" class="how-to-support-grid">
-          <article id="ikz6t6" class="gjs-t-border support-card-financial">
+          <article id="support-card-financial-contributions" class="gjs-t-border support-card-financial">
             <div class="support-financial-header"><img loading="lazy" alt="Financial contributions icon"
                 src="https://api.iconify.design/lucide-banknote.svg?color=%23136f63" class="support-financial-icon" />
               <h3 id="ig2n0d" class="support-financial-title">Financial Contributions</h3>
             </div>
-            <p id="i0sfz1" class="support-financial-text">Annual operating budget of 1,783,000 KES ($10,000 USD) with
-              transparent line-item breakdown available.</p>
-            <p id="ibrslg" class="support-financial-text">
+            <ul>
+              <li id="i0sfz1" class="support-financial-text">Annual operating budget of 1,783,000 KES ($10,000 USD) with
+                transparent line-item breakdown available.</li>
               <li id="i6wz43-2" class="whitespace-normal break-words">Monthly Child Sponsorship - $200 (complete care
                 package)</li>
-            </p>
-            <p id="iqmz94" class="support-financial-text">
               <li id="i829bt-3" data-pm-slice="2 4 []" class="whitespace-normal break-words">Emergency Fund
                 contributions</li>
-            </p>
-            <p id="ixiv8i" class="support-financial-text">
-              <li id="iadx7f-3" data-pm-slice="2 4 []" class="whitespace-normal break-words">Specific Item Sponsorship:
+              <li id="iadx7f-3" data-pm-slice="2 4 []" class="whitespace-normal break-words">Specific Item
+                Sponsorship:
               </li>
-            </p>
-            <p id="ih2c71" class="support-financial-text">
               <li id="irkzlu-2" class="whitespace-normal break-words">School uniforms: $30 per child</li>
-              <li id="i50wwd-2" data-pm-slice="2 2 []" class="whitespace-normal break-words">Medical care: $12 per child
+              <li id="i50wwd-2" data-pm-slice="2 2 []" class="whitespace-normal break-words">Medical care: $12 per
+                child
                 annually</li>
               <li id="i83y1r-2" class="whitespace-normal break-words">Monthly food: $60 per child</li>
               <li id="i0i60t-2" class="whitespace-normal break-words">Educational materials: $6 per child</li>
-            </p>
+            </ul>
             <div id="iy17to" class="support-financial-actions"></div>
-            <div id="i8392q">Sponsorship Options</div>
-            <div id="ib9lcs">
-              <div id="i94klr">$10,000</div>
-              <div id="iniqj2">Annual Partnership</div>
-              <div id="ifda3f">Full program Support </div>
-            </div>
-            <div id="ikaood" class="gjs-divider"></div>
-            <div id="igenmf">
-              <div id="icuiwd">$200</div>
-              <div id="ienbxj">Monthly Child Support</div>
-              <div id="ig1llk">Complete Care Package</div>
-            </div>
-            <div id="iwg71j" class="gjs-divider"></div>
-            <div id="ipseqm">
-              <div id="i2oqig">$60</div>
-              <div id="ifa0a5">Monthly Food Supply</div>
-              <div id="i85y4x">Per Child Contribution</div>
-            </div>
-            <div id="i8qg0r" class="gjs-divider"></div>
-            <div id="iq68w7">
-              <div id="idwz43">$30</div>
-              <div id="is6101">School Uniforms</div>
-              <div id="i7nnrt">Per Child Annually</div>
+            <div id="i8392q" onclick="toggleSponsorshipOptions()">Sponsorship Options</div>
+            <div id="sponsorship-options-wrapper" class="sponsorship-options-wrapper">
+              <div id="ib9lcs">
+                <div id="i94klr">$10,000</div>
+                <div id="iniqj2">Annual Partnership</div>
+                <div id="ifda3f">Full program Support </div>
+              </div>
+              <div id="ikaood" class="gjs-divider"></div>
+              <div id="igenmf">
+                <div id="icuiwd">$200</div>
+                <div id="ienbxj">Monthly Child Support</div>
+                <div id="ig1llk">Complete Care Package</div>
+              </div>
+              <div id="iwg71j" class="gjs-divider"></div>
+              <div id="ipseqm">
+                <div id="i2oqig">$60</div>
+                <div id="ifa0a5">Monthly Food Supply</div>
+                <div id="i85y4x">Per Child Contribution</div>
+              </div>
+              <div id="i8qg0r" class="gjs-divider"></div>
+              <div id="iq68w7">
+                <div id="idwz43">$30</div>
+                <div id="is6101">School Uniforms</div>
+                <div id="i7nnrt">Per Child Annually</div>
+              </div>
             </div>
           </article>
           <article id="ick0z7" class="gjs-t-border support-card-partnerships">
@@ -258,7 +267,7 @@
               <li id="iti9ni">Emergency medical care when needed</li>
             </ul>
           </article>
-          <article id="inpqzh" class="gjs-t-border program-card-psychological">
+          <article id="program-card-psychological-support" class="gjs-t-border program-card-psychological">
             <div class="program-psychological-header"><img loading="lazy" alt="Psychological support icon"
                 src="https://api.iconify.design/lucide-brain.svg?color=%23136f63" class="program-psychological-icon" />
               <h3 class="program-psychological-title">Psychological Support</h3>
@@ -270,32 +279,34 @@
           </article>
         </div>
       </div>
-      <div id="i9f21e-2" class="programs-container">
+    </section>
+    <section id="i9f21e-2" class="connected-involved-section">
+      <div class="programs-container">
         <div id="izxtsh" class="programs-header"><img loading="lazy" alt="Programs icon"
             src="https://api.iconify.design/lucide-layers.svg?color=%23136f63" class="programs-icon" />
           <h2 id="i60dls" class="gjs-t-h2">Stay Connected &amp; Get Involved</h2>
         </div>
         <div id="i526vh" class="programs-grid">
-          <article id="invbgv" class="gjs-t-border program-card-education">
+          <article id="program-card-contact-updates" class="gjs-t-border program-card-education">
             <div class="program-education-header"><img loading="lazy" alt="Phone icon"
                 src="https://api.iconify.design/lucide-graduation-cap.svg?color=%23136f63" id="iu2cdf"
                 class="program-education-icon" />
               <h3 id="ialy4y" class="program-education-title">Contact for Updates</h3>
             </div>
-            <ul class="program-education-list">
-              <li id="ih7mla">davidaugustine176@gmail.com<div id="i0vmfk">+254110047945 / 0758902640</div>
-              </li>
-            </ul>
+            <div class="program-education-list">
+              <div id="ih7mla">davidaugustine176@gmail.com</div>
+              <div id="i0vmfk">+254110047945 / 0758902640</div>
+            </div>
           </article>
-          <article id="ifpser" class="gjs-t-border program-card-psychological">
+          <article id="program-card-advocacy-support" class="gjs-t-border program-card-psychological">
             <div id="ivulbg" class="program-psychological-header"><img loading="lazy" alt="Psychological support icon"
                 src="https://api.iconify.design/lucide-brain.svg?color=%23136f63" class="program-psychological-icon" />
               <h3 id="i13e34" class="program-psychological-title">Advocacy Support </h3>
             </div>
-            <ul class="program-psychological-list">
-              <li id="iupy0g">Help raise awareness<br id="iao268" /><span id="ihd6j3">Social media engagement</span>
-              </li>
-            </ul>
+            <div class="program-psychological-list">
+              <div id="iupy0g">Help raise awareness</div>
+              <div id="ihd6j3">Social media engagement</div>
+            </div>
           </article>
         </div>
       </div>
@@ -310,6 +321,32 @@
         var n, t = this, e = 'gjs-collapse', a = 'max-height', o = 0, i = function () { var n = document.createElement('void'), t = { transition: 'transitionend', OTransition: 'oTransitionEnd', MozTransition: 'transitionend', WebkitTransition: 'webkitTransitionEnd' }; for (var e in t) if (void 0 !== n.style[e]) return t[e] }(), r = function (n) { o = 1; var t = function (n) { var t = window.getComputedStyle(n), e = t.display, o = parseInt(t[a]); if ('none' !== e && 0 !== o) return n.offsetHeight; n.style.height = 'auto', n.style.display = 'block', n.style.position = 'absolute', n.style.visibility = 'hidden'; var i = n.offsetHeight; return n.style.height = '', n.style.display = '', n.style.position = '', n.style.visibility = '', i }(n), e = n.style; e.display = 'block', e.transition = "".concat(a, " 0.25s ease-in-out"), e.overflowY = 'hidden', '' == e[a] && (e[a] = 0), 0 == parseInt(e[a]) ? (e[a] = '0', setTimeout((function () { e[a] = t + 'px' }), 10)) : e[a] = '0' }; e in t || t.addEventListener('click', (function (e) { if (e.preventDefault(), !o) { var l = t.closest("[data-gjs=navbar]"), c = null == l ? void 0 : l.querySelector("[data-gjs=navbar-items]"); c && r(c), n || (null == c || c.addEventListener(i, (function () { o = 0; var n = c.style; 0 == parseInt(n[a]) && (n.display = '', n[a] = '') })), n = 1) } })), t[e] = 1
       }.bind(items[i]))();
     }</script>
+  <script>
+    function toggleSponsorshipOptions() {
+      // Only toggle on mobile/tablet
+      if (window.innerWidth <= 992) {
+        var wrapper = document.getElementById('sponsorship-options-wrapper');
+        var header = document.getElementById('i8392q');
+
+        if (wrapper && header) {
+          wrapper.classList.toggle('collapsed');
+          header.classList.toggle('collapsed');
+        }
+      }
+    }
+
+    // Initialize as collapsed on mobile on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth <= 992) {
+        var wrapper = document.getElementById('sponsorship-options-wrapper');
+        var header = document.getElementById('i8392q');
+        if (wrapper && header) {
+          wrapper.classList.add('collapsed');
+          header.classList.add('collapsed');
+        }
+      }
+    });
+  </script>
   <footer class="site-footer">
     <div class="footer-bottom-bar">
       <div class="footer-bottom-container"><small class="footer-copyright">© 2025 Woanda Community Church. All rights
