@@ -19,14 +19,14 @@
 
 <body id="imuo7c" class="gjs-t-body cls-jrp1ws">
   <header id="iiqk4" class="site-header">
-    <div id="ibv35" class="header-container"><a href="./impact-support.html" id="ipzbg"
+    <div id="header-container" class="header-container"><a href="./impact-support.html" id="brand-link"
         aria-label="Community Care Initiative – Home" class="gjs-t-link brand-link"><img
           src="https://api.iconify.design/lucide-church.svg?color=%23136f63" alt="Church icon" width="36" height="36"
-          loading="lazy" id="iv8sm" class="brand-icon" /><span id="ian2s" class="brand-name">Woanda Community
+          loading="lazy" id="brand-icon" class="brand-icon" /><span id="brand-name" class="brand-name">Woanda Community
           Church</span></a><!-- Desktop navigation -->
-      <nav id="iiqk4-nav-desktop-2" aria-label="Primary" class="primary-navigation"><a href="./index.html" id="ibny9-2"
-          class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html" id="igl33-2"
-          class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a href="./donations.html" id="ijekps-2"
+      <nav id="primary-nav-desktop" aria-label="Primary" class="primary-navigation"><a href="./index.html" id="nav-link-about"
+          class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html" id="nav-link-impact"
+          class="gjs-t-link nav-link-impact nav-link-active">Impact &amp; Support</a><a href="./donations.html" id="nav-link-donate"
           aria-label="Donate to Woanda Community Church" class="gjs-t-button nav-donate-button">Donate</a></nav>
       <!-- Mobile toggle button -->
       <button id="iiqk4-toggle" class="mobile-menu-button" type="button" aria-expanded="false"
@@ -36,15 +36,15 @@
       </button>
     </div><!-- Mobile collapsible panel -->
     <div id="iiqk4-panel" aria-hidden="true" class="mobile-nav-panel">
-      <div id="ibqt5" class="mobile-nav-inner">
-        <div role="menu" aria-label="Primary mobile" id="imm5n" class="mobile-nav-list"><a href="./index.html"
-            role="menuitem" id="ik7zx" class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html"
-            role="menuitem" id="iyfzr" class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a
-            href="./donations.html" role="menuitem" id="i2vql" aria-label="Donate to Woanda Community Church"
+      <div id="mobile-nav-inner" class="mobile-nav-inner">
+        <div role="menu" aria-label="Primary mobile" id="mobile-nav-list" class="mobile-nav-list"><a href="./index.html"
+            role="menuitem" id="mobile-nav-about" class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html"
+            role="menuitem" id="mobile-nav-impact" class="gjs-t-link nav-link-impact nav-link-active">Impact &amp; Support</a><a
+            href="./donations.html" role="menuitem" id="mobile-nav-donate" aria-label="Donate to Woanda Community Church"
             class="gjs-t-button nav-donate-button">Donate</a></div>
       </div>
     </div>
-    <script id="ik2yv">
+    <script id="header-mobile-nav-script">
       (function () {
         var header = document.getElementById('iiqk4');
         var toggle = document.getElementById('iiqk4-toggle');
@@ -88,7 +88,7 @@
     </script>
   </header>
   <main id="izd3nn">
-    <section class="hero-section">
+    <section class="top-stats-section">
       <div class="hero-container" id="i4ucrh">
         <div class="hero-content">
           <h1 class="gjs-t-h1 hero-title">Impact &amp; Support</h1>
@@ -100,12 +100,7 @@
               aria-label="Jump to How You Can Support section" class="gjs-t-button hero-cta-primary">How to Support</a>
           </div>
         </div>
-        <div class="hero-image-wrapper">
-          <figure id="idhfwp" class="gjs-t-border hero-figure"></figure>
-        </div>
       </div>
-    </section>
-    <section class="top-stats-section">
       <div id="i2oml5" class="top-stats-container">
         <div id="i0wj5u" class="gjs-t-border stat-card-children"><img loading="lazy" alt="Children supported icon"
             src="https://api.iconify.design/lucide-users.svg?color=%23136f63" class="stat-icon-children" />
@@ -188,32 +183,6 @@
               <li id="i0i60t-2" class="whitespace-normal break-words">Educational materials: $6 per child</li>
             </ul>
             <div id="iy17to" class="support-financial-actions"></div>
-            <div id="i8392q" onclick="toggleSponsorshipOptions()">Sponsorship Options</div>
-            <div id="sponsorship-options-wrapper" class="sponsorship-options-wrapper">
-              <div id="ib9lcs">
-                <div id="i94klr">$10,000</div>
-                <div id="iniqj2">Annual Partnership</div>
-                <div id="ifda3f">Full program Support </div>
-              </div>
-              <div id="ikaood" class="gjs-divider"></div>
-              <div id="igenmf">
-                <div id="icuiwd">$200</div>
-                <div id="ienbxj">Monthly Child Support</div>
-                <div id="ig1llk">Complete Care Package</div>
-              </div>
-              <div id="iwg71j" class="gjs-divider"></div>
-              <div id="ipseqm">
-                <div id="i2oqig">$60</div>
-                <div id="ifa0a5">Monthly Food Supply</div>
-                <div id="i85y4x">Per Child Contribution</div>
-              </div>
-              <div id="i8qg0r" class="gjs-divider"></div>
-              <div id="iq68w7">
-                <div id="idwz43">$30</div>
-                <div id="is6101">School Uniforms</div>
-                <div id="i7nnrt">Per Child Annually</div>
-              </div>
-            </div>
           </article>
           <article id="ick0z7" class="gjs-t-border support-card-partnerships">
             <div class="support-partnerships-header"><img loading="lazy" alt="Partnership icon"
@@ -233,6 +202,31 @@
             </ul>
             </p>
             <div class="support-partnerships-actions"></div>
+          </article>
+          <article id="support-card-sponsorship-options" class="support-card-sponsorship">
+            <h4 id="i8392q">Sponsorship Options</h4>
+            <div id="sponsorship-options-wrapper" class="sponsorship-options-grid">
+              <div id="ib9lcs" class="sponsorship-card">
+                <div id="i94klr" class="sponsorship-amount">$10,000</div>
+                <div id="iniqj2" class="sponsorship-title">Annual Partnership</div>
+                <div id="ifda3f" class="sponsorship-description">Full program Support</div>
+              </div>
+              <div id="igenmf" class="sponsorship-card">
+                <div id="icuiwd" class="sponsorship-amount">$200</div>
+                <div id="ienbxj" class="sponsorship-title">Monthly Child Support</div>
+                <div id="ig1llk" class="sponsorship-description">Complete Care Package</div>
+              </div>
+              <div id="ipseqm" class="sponsorship-card">
+                <div id="i2oqig" class="sponsorship-amount">$60</div>
+                <div id="ifa0a5" class="sponsorship-title">Monthly Food Supply</div>
+                <div id="i85y4x" class="sponsorship-description">Per Child Contribution</div>
+              </div>
+              <div id="iq68w7" class="sponsorship-card">
+                <div id="idwz43" class="sponsorship-amount">$30</div>
+                <div id="is6101" class="sponsorship-title">School Uniforms</div>
+                <div id="i7nnrt" class="sponsorship-description">Per Child Annually</div>
+              </div>
+            </div>
           </article>
         </div>
       </div>
