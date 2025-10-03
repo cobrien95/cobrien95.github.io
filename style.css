@@ -2943,17 +2943,26 @@ video {
 
 .donation-method-card {
     background-color: rgb(255 255 255 / 1);
-    padding: 1.5rem;
+    padding: 1.5rem !important;
     border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    box-sizing: border-box;
+}
+
+.gjs-t-border.donation-method-card,
+article.gjs-t-border.donation-method-card,
+article[id].gjs-t-border.donation-method-card {
+    padding: 1.5rem !important;
+    box-sizing: border-box;
 }
 
 .donation-method-header {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding-left: 1rem;
 }
 
 .logo-wrapper {
@@ -3080,11 +3089,19 @@ video {
 
 #itbsjv .donation-method-card {
     background-color: #ffffff;
-    padding: 2rem;
+    padding: 2rem !important;
     border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    box-sizing: border-box;
+}
+
+#itbsjv .gjs-t-border.donation-method-card,
+#itbsjv article.gjs-t-border.donation-method-card,
+#itbsjv article.donation-method-card {
+    padding: 2rem !important;
+    box-sizing: border-box;
 }
 
 #itbsjv .donation-method-header {
@@ -3721,7 +3738,22 @@ video {
     }
 
     #itbsjv .donation-method-card {
-        padding: 1.5rem;
+        padding: 1.5rem !important;
+    }
+
+    #itbsjv .gjs-t-border.donation-method-card,
+    #itbsjv .donation-method-card.gjs-t-border,
+    #itbsjv article.gjs-t-border.donation-method-card,
+    #itbsjv article.donation-method-card,
+    article.gjs-t-border.donation-method-card {
+        padding: 1.5rem !important;
+        box-sizing: border-box;
+    }
+
+    .gjs-t-border.donation-method-card,
+    .donation-method-card.gjs-t-border {
+        padding: 1.5rem !important;
+        box-sizing: border-box;
     }
 
     #itbsjv .logo-wrapper,
@@ -3731,6 +3763,16 @@ video {
 
     #ihqd0d.inline-quick-nav {
         gap: 0.75rem;
+    }
+
+    /* Force donation card padding - must be last */
+    article.donation-method-card,
+    article.gjs-t-border.donation-method-card,
+    article[id].gjs-t-border.donation-method-card,
+    #igqm8i,
+    #i7vkr4,
+    #ie7p4r {
+        padding: 1.5rem !important;
     }
 }
 
@@ -3786,7 +3828,6 @@ video {
     .gjs-t-border {
         max-width: 100% !important;
         box-sizing: border-box;
-        padding: 10 !important;
     }
 
     .page-header-section {
@@ -4388,7 +4429,6 @@ video {
     .gjs-t-border {
         max-width: 100% !important;
         box-sizing: border-box;
-        padding: 0 !important;
     }
 
     .page-header-container {
@@ -4880,7 +4920,21 @@ video {
     }
 
     #itbsjv .donation-method-card {
-        padding: 1.25rem;
+        padding: 1.25rem !important;
+    }
+
+    #itbsjv .gjs-t-border.donation-method-card,
+    #itbsjv .donation-method-card.gjs-t-border,
+    #itbsjv article.gjs-t-border.donation-method-card,
+    #itbsjv article.donation-method-card {
+        padding: 1.25rem !important;
+        box-sizing: border-box;
+    }
+
+    .gjs-t-border.donation-method-card,
+    .donation-method-card.gjs-t-border {
+        padding: 1.25rem !important;
+        box-sizing: border-box;
     }
 
     #itbsjv .logo-wrapper,
@@ -4918,5 +4972,59 @@ video {
 
     #ium5hj {
         padding: 0.5rem 0.75rem;
+    }
+
+    /* Force donation card padding - must be last */
+    article.donation-method-card,
+    article.gjs-t-border.donation-method-card,
+    article[id].gjs-t-border.donation-method-card {
+        padding: 1.25rem !important;
+    }
+
+    #itbsjv article.donation-method-card,
+    #itbsjv article.gjs-t-border.donation-method-card {
+        padding: 1.25rem !important;
+    }
+
+    #igqm8i,
+    #i7vkr4,
+    #ie7p4r {
+        padding: 1.25rem !important;
+    }
+}
+
+/* Additional override outside media query for maximum specificity */
+@media (max-width: 480px) {
+    #igqm8i.gjs-t-border.donation-method-card,
+    #i7vkr4.gjs-t-border.donation-method-card,
+    #ie7p4r.gjs-t-border.donation-method-card {
+        padding: 1.25rem !important;
+    }
+}
+
+/* Absolute last resort - direct ID targeting */
+#igqm8i,
+#i7vkr4,
+#ie7p4r {
+    padding: 1.25rem !important;
+    padding-top: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+    padding-left: 1.25rem !important;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #igqm8i,
+    #i7vkr4,
+    #ie7p4r {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (min-width: 769px) {
+    #igqm8i,
+    #i7vkr4,
+    #ie7p4r {
+        padding: 1.5rem !important;
     }
 }
