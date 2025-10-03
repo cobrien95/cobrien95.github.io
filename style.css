@@ -346,7 +346,7 @@ video {
 }
 
 .nav-link-about:hover {
-    color: rgb(15 23 42 / 1);
+    color: var(--gjs-t-color-primary);
 }
 
 .nav-link-services {
@@ -431,7 +431,7 @@ video {
 }
 
 .page-header-section {
-    background-color: rgb(255 255 255 / 1);
+    background-color: rgb(248 250 252 / 1);
 }
 
 .page-header-container {
@@ -497,7 +497,7 @@ video {
 }
 
 .mission-section {
-    background-color: rgb(248 250 252 / 1);
+    background-color: rgb(255 255 255 / 1);
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -568,7 +568,7 @@ video {
 }
 
 .history-section {
-    background-color: rgb(255 255 255 / 1);
+    background-color: rgb(248 250 252 / 1);
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -637,7 +637,7 @@ video {
 }
 
 .values-section {
-    background-color: rgb(248 250 252 / 1);
+    background-color: rgb(255 255 255 / 1);
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -660,15 +660,20 @@ video {
 
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
 .value-card {
-    grid-column: span 12 / span 12;
     background-color: rgb(255 255 255 / 1);
     padding: 1.5rem;
     box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.value-card {
@@ -701,7 +706,7 @@ video {
 }
 
 .leadership-section {
-    background-color: rgb(255 255 255 / 1);
+    background-color: rgb(248 250 252 / 1);
 }
 
 .leadership-container {
@@ -779,7 +784,7 @@ video {
 }
 
 .donation-cta-section {
-    background-color: rgb(248 250 252 / 1);
+    background-color: rgb(255 255 255 / 1);
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -1109,9 +1114,16 @@ video {
     color: rgb(15 23 42 / 1);
 }
 
+.nav-link-active {
+    color: rgb(15 23 42 / 1) !important;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 .nav-link-impact-active {
     color: rgb(15 23 42 / 1);
-    font-weight: 600;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .nav-link-programs {
@@ -1193,17 +1205,14 @@ video {
 
 .hero-section {
     width: 100%;
-    background-color: rgb(255 255 255 / 1);
+    background-color: rgb(248 250 252 / 1);
 }
 
 .hero-container {
     max-width: 72rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 1.5rem;
     display: flex;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 1.5rem;
@@ -1273,15 +1282,14 @@ video {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    background-color: rgb(255 255 255 / 1);
 }
 
 .top-stats-container {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 1.5rem;
@@ -1296,6 +1304,12 @@ video {
     align-items: flex-start;
     gap: 1rem;
     box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card-children:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.stat-card-children {
@@ -1332,6 +1346,12 @@ video {
     align-items: flex-start;
     gap: 1rem;
     box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card-cbo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.stat-card-cbo {
@@ -1368,6 +1388,12 @@ video {
     align-items: flex-start;
     gap: 1rem;
     box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card-budget:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.stat-card-budget {
@@ -1462,7 +1488,7 @@ video {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: rgb(255 255 255 / 1);
+    background-color: rgb(248 250 252 / 1);
 }
 
 .how-to-support-container {
@@ -1525,6 +1551,12 @@ video {
     grid-column: span 6 / span 6;
     padding: 1.5rem;
     box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.support-card-financial:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.support-card-financial {
@@ -1591,6 +1623,12 @@ video {
     grid-column: span 6 / span 6;
     padding: 1.5rem;
     box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.support-card-partnerships:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.support-card-partnerships {
@@ -1757,13 +1795,14 @@ video {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    background-color: rgb(255 255 255 / 1);
 }
 
 .connected-involved-section {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: rgb(255 255 255 / 1);
+    background-color: rgb(248 250 252 / 1);
 }
 
 .programs-container {
@@ -1800,6 +1839,12 @@ video {
     padding: 1.5rem;
     box-sizing: border-box;
     background-color: rgb(255 255 255 / 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.program-card-education:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.program-card-education {
@@ -1844,6 +1889,12 @@ video {
     padding: 1.5rem;
     box-sizing: border-box;
     background-color: rgb(255 255 255 / 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.program-card-healthcare:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.program-card-healthcare {
@@ -1888,6 +1939,12 @@ video {
     padding: 1.5rem;
     box-sizing: border-box;
     background-color: rgb(255 255 255 / 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.program-card-psychological:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.program-card-psychological {
@@ -2865,7 +2922,7 @@ video {
 }
 
 .nav-link-impact:hover {
-    color: rgb(15 23 42 / 1);
+    color: var(--gjs-t-color-primary);
 }
 
 .nav-link-donations {
@@ -2949,6 +3006,12 @@ video {
     flex-direction: column;
     gap: 1.25rem;
     box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.donation-method-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .gjs-t-border.donation-method-card,
@@ -3178,7 +3241,7 @@ article[id].gjs-t-border.donation-method-card {
 }
 
 #iiqk4-2 .primary-navigation .gjs-t-link:hover {
-    color: rgb(15 23 42 / 1);
+    color: var(--gjs-t-color-primary);
 }
 
 #iiqk4-2 .primary-navigation a[aria-current="page"] {
@@ -5026,5 +5089,75 @@ article[id].gjs-t-border.donation-method-card {
     #i7vkr4,
     #ie7p4r {
         padding: 1.5rem !important;
+    }
+}
+
+/* Sponsorship Options Cards */
+#support-card-sponsorship-options {
+    grid-column: span 12 / span 12;
+    width: 100%;
+}
+
+.sponsorship-options-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.sponsorship-card {
+    background-color: rgb(248 250 252 / 1);
+    border: 1px solid rgb(226 232 240 / 1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sponsorship-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+
+.sponsorship-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gjs-t-color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.sponsorship-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(15 23 42 / 1);
+    margin-bottom: 0.25rem;
+}
+
+.sponsorship-description {
+    font-size: 0.875rem;
+    color: rgb(71 85 105 / 1);
+    line-height: 1.4;
+}
+
+/* Mobile responsiveness for sponsorship cards */
+@media (max-width: 768px) {
+    .sponsorship-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .sponsorship-card {
+        padding: 0.875rem;
+    }
+    
+    .sponsorship-amount {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsorship-options-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
     }
 }
