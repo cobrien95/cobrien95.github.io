@@ -15,27 +15,34 @@
 
 <body class="gjs-t-body">
   <header id="iiqk4" class="site-header">
-    <div id="ibv35" class="header-container"><a href="./impact-support.html" id="ipzbg"
+    <div id="header-container" class="header-container"><a href="./impact-support.html" id="brand-link"
         aria-label="Community Care Initiative – Home" class="gjs-t-link brand-link"><img
           src="https://api.iconify.design/lucide-church.svg?color=%23136f63" alt="Church icon" width="36" height="36"
-          loading="lazy" id="iv8sm" class="brand-icon" /><span id="ian2s" class="brand-name">Woanda Community
+          loading="lazy" id="brand-icon" class="brand-icon" /><span id="brand-name" class="brand-name">Woanda Community
           Church</span></a><!-- Desktop navigation -->
-      <nav id="iiqk4-nav-desktop-2" aria-label="Primary" class="primary-navigation"><a href="./index.html" id="ibny9-2"
-          class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html" id="igl33-2"
-          class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a href="./donations.html" id="ijekps-2"
-          aria-label="Donate to Woanda Community Church" class="gjs-t-button nav-donate-button">Donate</a></nav>
+      <nav id="primary-nav-desktop" aria-label="Primary" class="primary-navigation"><a href="./index.html"
+          id="nav-link-about" class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html"
+          id="nav-link-impact" class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a
+          href="./donations.html" id="nav-link-donate" aria-label="Donate to Woanda Community Church"
+          class="gjs-t-button nav-donate-button">Donate</a></nav>
       <!-- Mobile toggle button -->
+      <button id="iiqk4-toggle" class="mobile-menu-button" type="button" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <img src="https://api.iconify.design/lucide-menu.svg?color=%230f172a" alt="Menu" width="20" height="20"
+          class="mobile-menu-icon" />
+      </button>
     </div><!-- Mobile collapsible panel -->
     <div id="iiqk4-panel" aria-hidden="true" class="mobile-nav-panel">
-      <div id="ibqt5" class="mobile-nav-inner">
-        <div role="menu" aria-label="Primary mobile" id="imm5n" class="mobile-nav-list"><a href="./index.html"
-            role="menuitem" id="ik7zx" class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html"
-            role="menuitem" id="iyfzr" class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a
-            href="./donations.html" role="menuitem" id="i2vql" aria-label="Donate to Woanda Community Church"
+      <div id="mobile-nav-inner" class="mobile-nav-inner">
+        <div role="menu" aria-label="Primary mobile" id="mobile-nav-list" class="mobile-nav-list"><a href="./index.html"
+            role="menuitem" id="mobile-nav-about" class="gjs-t-link nav-link-about">About</a><a
+            href="./impact-support.html" role="menuitem" id="mobile-nav-impact"
+            class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a href="./donations.html" role="menuitem"
+            id="mobile-nav-donate" aria-label="Donate to Woanda Community Church"
             class="gjs-t-button nav-donate-button">Donate</a></div>
       </div>
     </div>
-    <script id="ik2yv">
+    <script id="header-mobile-nav-script">
       (function () {
         var header = document.getElementById('iiqk4');
         var toggle = document.getElementById('iiqk4-toggle');
@@ -83,13 +90,14 @@
       <div class="page-header-container">
         <div class="page-header-text-block">
           <h1 class="gjs-t-h1 page-title">About Us</h1>
-          <p id="i5oss" class="page-subtitle">At Woanda Community Church, we value connection and community. Our
+          <p id="about-page-subtitle" class="page-subtitle">At Woanda Community Church, we value connection and
+            community. Our
             teachings are built around connecting people to each other and to God.</p>
         </div>
         <div class="page-header-image-block">
           <figure class="gjs-t-border hero-figure"><img
               src="https://cdn.grapesjs.com/workspaces/cmfbzqzid1pjey0i3ox56ym7k/assets/0e29b486-0af1-4928-8542-812fc02b8d0a__churchcong6.jpg"
-              alt="Congregation worshipping together in Kenya" width="1280" height="480" loading="lazy" id="ihhf8"
+              alt="Congregation worshipping together in Kenya" loading="lazy" id="about-hero-image"
               class="hero-image" />
             <figcaption class="hero-caption">A welcoming Kenyan church community</figcaption>
           </figure>
@@ -100,7 +108,8 @@
       <div class="mission-container">
         <div class="mission-content">
           <h2 class="gjs-t-h2 mission-heading">Our Mission</h2>
-          <p id="iq81f" class="mission-paragraph">At Waondo Community Church, we are passionate about spreading the love
+          <p id="mission-paragraph" class="mission-paragraph">At Waondo Community Church, we are passionate about
+            spreading the love
             of Christ and caring for those in need. We believe in empowering our community through spiritual growth,
             social support, and practical assistance.</p>
           <div class="mission-cta-row"><a href="##" class="gjs-t-button mission-donate-button">Donate to the Orphanage
@@ -112,13 +121,16 @@
       <div class="history-container">
         <div class="history-text-block">
           <h2 class="gjs-t-h2 history-heading">Our Story</h2>
-          <p id="ivnl4" class="history-paragraph-one">David Augustine Kisukwa leads the Mfangano Youth Mindset
+          <p id="history-paragraph-1" class="history-paragraph-one">David Augustine Kisukwa leads the Mfangano Youth
+            Mindset
             Innovation on a remote island in Kenya's Lake Victoria, where he has been supporting 50 orphaned and
             vulnerable children with basic needs like food, education, and healthcare. </p>
-          <p id="ihhxk" class="history-paragraph-two">Working within the Suba and Luo speaking communities, Kisukwa has
+          <p id="history-paragraph-2" class="history-paragraph-two">Working within the Suba and Luo speaking
+            communities, Kisukwa has
             developed a comprehensive understanding of what these children need - not just shelter, but trauma-informed
             care, vocational training, and community integration.</p>
-          <p id="iz26x" class="history-paragraph-three">Now he seeks to formalize and expand this grassroots effort into
+          <p id="history-paragraph-3" class="history-paragraph-three">Now he seeks to formalize and expand this
+            grassroots effort into
             a permanent orphanage facility with proper infrastructure and sustainable programming. His detailed budget
             and holistic approach suggest someone who has moved beyond good intentions to practical experience, ready to
             scale community-driven solutions into lasting institutional change.</p>
@@ -138,42 +150,70 @@
         <h2 class="gjs-t-h2 values-heading">Core Values &amp; Beliefs</h2>
         <div class="values-grid">
           <article id="iemsmx" class="gjs-t-border value-card">
-            <h3 id="iy9y3i" class="value-title"><b id="i5z3ag">Holistic Development</b></h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Holistic Development icon" 
+                src="https://api.iconify.design/lucide-sprout.svg?color=%23136f63" class="value-icon" />
+              <h3 id="iy9y3i" class="value-title">Holistic Development</h3>
+            </div>
             <p id="is394x" class="value-description">MYMI believes that providing basic shelter alone is insufficient
               for vulnerable children. True transformation requires simultaneous attention to education, healthcare,
               psychological healing, and social integration.</p>
           </article>
           <article class="gjs-t-border value-card">
-            <h3 id="iiexvl" class="value-title">Trauma-Informed Care</h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Trauma-Informed Care icon" 
+                src="https://api.iconify.design/lucide-heart.svg?color=%23136f63" class="value-icon" />
+              <h3 id="iiexvl" class="value-title">Trauma-Informed Care</h3>
+            </div>
             <p id="irmmaf" class="value-description">We recognize that orphaned and vulnerable children carry emotional
               wounds that must be addressed through professional counseling and therapeutic approaches, not simply
               overlooked or expected to heal naturally.</p>
           </article>
           <article id="ijvszq" class="gjs-t-border value-card">
-            <h3 id="irktie" class="value-title">Community Ownership</h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Community Ownership icon" 
+                src="https://api.iconify.design/lucide-users.svg?color=%23136f63" class="value-icon" />
+              <h3 id="irktie" class="value-title">Community Ownership</h3>
+            </div>
             <p id="iri5at" class="value-description">We believe sustainable change requires deep engagement with local
               parents, guardians, and community leaders. The community must be empowered to take increasing
               responsibility for the project's long-term success.</p>
           </article>
           <article class="gjs-t-border value-card">
-            <h3 id="i3v8yh" class="value-title">Dignity Through Self-Reliance</h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Self-Reliance icon" 
+                src="https://api.iconify.design/lucide-award.svg?color=%23136f63" class="value-icon" />
+              <h3 id="i3v8yh" class="value-title">Dignity Through Self-Reliance</h3>
+            </div>
             <p id="iroyc6" class="value-description">Rather than creating dependency through charity alone, MYMI focuses
               on vocational training and life skills to produce self-reliant, responsible, and contributing members of
               society.</p>
           </article>
           <article class="gjs-t-border value-card">
-            <h3 id="incnkf" class="value-title">Cultural Respect</h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Cultural Respect icon" 
+                src="https://api.iconify.design/lucide-globe.svg?color=%23136f63" class="value-icon" />
+              <h3 id="incnkf" class="value-title">Cultural Respect</h3>
+            </div>
             <p id="ic9ubp" class="value-description">We intentionally honor the unique cultural heritage of the Suba and
               Luo communities, ensuring that care respects local traditions and values rather than imposing outside
               cultural norms.</p>
           </article>
           <article id="iviq47" class="gjs-t-border value-card">
-            <h3 id="i41rlh" class="value-title">Transparency and Accountability</h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Transparency icon" 
+                src="https://api.iconify.design/lucide-eye.svg?color=%23136f63" class="value-icon" />
+              <h3 id="i41rlh" class="value-title">Transparency and Accountability</h3>
+            </div>
             <p id="iifkka" class="value-description">We maintain rigorous monitoring, evaluation, and documentation
               standards, believing in measurable outcomes and responsible stewardship of all resources.</p>
           </article>
           <article id="i7z1ca" class="gjs-t-border value-card">
-            <h3 id="ix4j2u" class="value-title">Long-Term Sustainability</h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Sustainability icon" 
+                src="https://api.iconify.design/lucide-target.svg?color=%23136f63" class="value-icon" />
+              <h3 id="ix4j2u" class="value-title">Long-Term Sustainability</h3>
+            </div>
             <p id="i04rr5" class="value-description">We prioritize capacity-building and sustainable funding models,
               recognizing that short-term interventions without lasting support systems ultimately fail the children
               they are meant to serve.</p>
@@ -188,7 +228,8 @@
           <article id="ir14wk" class="gjs-t-border leader-card">
             <figure class="leader-figure"><img
                 src="https://cdn.grapesjs.com/workspaces/cmfbzqzid1pjey0i3ox56ym7k/assets/7c08e70b-74fb-4927-8573-e8db2a89fb54__church6.jpg"
-                alt="Pastor David Augustine" width="400" height="400" loading="lazy" id="itze2j" class="leader-image" />
+                alt="Pastor David Augustine" width="400" height="400" loading="lazy" id="leader-david-image"
+                class="leader-image" />
               <figcaption class="leader-figcaption">Senior Pastor portrait</figcaption>
             </figure>
             <h3 id="in3foi" class="leader-name">Pastor David Augustine </h3>
@@ -197,56 +238,96 @@
           </article>
         </div>
       </div>
-      <div id="itgm2a" class="values-container">
-        <h2 id="irvlhj" class="gjs-t-h2 values-heading">Current Goals and Needs</h2>
+      <div id="goals-and-needs-container" class="values-container">
+        <h2 id="goals-heading" class="gjs-t-h2 values-heading">Current Goals and Needs</h2>
         <div class="values-grid">
-          <article id="iy7pgl" class="gjs-t-border value-card">
-            <h3 id="i2ayoi" class="value-title"><b>Land Acquisition</b></h3>
+          <article id="goal-card-land-acquisition" class="gjs-t-border value-card">
+            <div class="value-header">
+              <img loading="lazy" alt="Land icon" 
+                src="https://api.iconify.design/lucide-map.svg?color=%23136f63" class="value-icon" />
+              <h3 class="value-title"><b>Land Acquisition</b></h3>
+            </div>
             <p id="id5655" class="value-description">MYMI requires vast land to purchase for establishing a permanent
               orphanage facility to replace current temporary arrangements.</p>
           </article>
           <article class="gjs-t-border value-card">
-            <h3 id="ixrf1f" class="value-title"><b>Facility Construction</b></h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Construction icon" 
+                src="https://api.iconify.design/lucide-building.svg?color=%23136f63" class="value-icon" />
+              <h3 id="ixrf1f" class="value-title"><b>Facility Construction</b></h3>
+            </div>
             <p id="i3f5e2" class="value-description">The organization needs to build or renovate safe, child-friendly
               buildings that meet regulatory standards for housing 50+ children.</p>
           </article>
-          <article id="ih36zh" class="gjs-t-border value-card">
-            <h3 id="i0toip" class="value-title"><b>Annual Operating Budget</b></h3>
+          <article id="goal-card-operating-budget" class="gjs-t-border value-card">
+            <div class="value-header">
+              <img loading="lazy" alt="Budget icon" 
+                src="https://api.iconify.design/lucide-wallet.svg?color=%23136f63" class="value-icon" />
+              <h3 class="value-title"><b>Annual Operating Budget</b></h3>
+            </div>
             <p id="i4a8v7" class="value-description">MYMI requires approximately $10,000 USD yearly to cover food,
               school fees, healthcare, and staff salaries for current operations.</p>
           </article>
           <article class="gjs-t-border value-card">
-            <h3 id="i5a1bj" class="value-title"><b>Professional Staff</b>:</h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Staff icon" 
+                src="https://api.iconify.design/lucide-user-check.svg?color=%23136f63" class="value-icon" />
+              <h3 id="i5a1bj" class="value-title"><b>Professional Staff</b></h3>
+            </div>
             <p id="idyhgn" class="value-description">The organization needs qualified caregivers, teachers, counselors,
               and social workers trained in trauma-informed care and child protection.</p>
           </article>
           <article class="gjs-t-border value-card">
-            <h3 id="i174sd" class="value-title"><b>Educational Resources</b></h3>
+            <div class="value-header">
+              <img loading="lazy" alt="Education icon" 
+                src="https://api.iconify.design/lucide-book-open.svg?color=%23136f63" class="value-icon" />
+              <h3 id="i174sd" class="value-title"><b>Educational Resources</b></h3>
+            </div>
             <p id="i6chxm" class="value-description">School notebooks, recreational programs, and transportation for
               educational activities remain unfunded and need immediate support.</p>
           </article>
-          <article id="iwzclg" class="gjs-t-border value-card">
-            <h3 id="ibqhj9" class="value-title"><b>Medical Care Access</b></h3>
+          <article id="goal-card-medical-care" class="gjs-t-border value-card">
+            <div class="value-header">
+              <img loading="lazy" alt="Medical icon" 
+                src="https://api.iconify.design/lucide-heart-pulse.svg?color=%23136f63" class="value-icon" />
+              <h3 class="value-title"><b>Medical Care Access</b></h3>
+            </div>
             <p id="iwgsfn" class="value-description">Regular healthcare services, vaccinations, and emergency medical
               support require ongoing funding and local healthcare partnerships.</p>
           </article>
-          <article id="igaird" class="gjs-t-border value-card">
-            <h3 id="izxty9" class="value-title"><b>Sustainable Funding Model</b></h3>
+          <article id="goal-card-sustainable-funding" class="gjs-t-border value-card">
+            <div class="value-header">
+              <img loading="lazy" alt="Funding icon" 
+                src="https://api.iconify.design/lucide-trending-up.svg?color=%23136f63" class="value-icon" />
+              <h3 class="value-title"><b>Sustainable Funding Model</b></h3>
+            </div>
             <p id="ijl1tc" class="value-description">MYMI needs diverse revenue streams including grants, donations, and
               income-generating activities to ensure long-term viability.</p>
           </article>
-          <article id="ip0b2f" class="gjs-t-border value-card">
-            <h3 id="isaz2v" class="value-title"><b id="ifknji">Community Partnerships</b></h3>
+          <article id="goal-card-community-partnerships" class="gjs-t-border value-card">
+            <div class="value-header">
+              <img loading="lazy" alt="Partnership icon" 
+                src="https://api.iconify.design/lucide-handshake.svg?color=%23136f63" class="value-icon" />
+              <h3 class="value-title"><b>Community Partnerships</b></h3>
+            </div>
             <p id="idp54h" class="value-description">The organization requires stronger relationships with local
               government, NGOs, and community leaders to leverage additional resources and support.</p>
           </article>
-          <article id="in50y9" class="gjs-t-border value-card">
-            <h3 id="iplyhe" class="value-title"><b>Monitoring Systems</b></h3>
+          <article id="goal-card-monitoring-systems" class="gjs-t-border value-card">
+            <div class="value-header">
+              <img loading="lazy" alt="Monitoring icon" 
+                src="https://api.iconify.design/lucide-line-chart.svg?color=%23136f63" class="value-icon" />
+              <h3 class="value-title"><b>Monitoring Systems</b></h3>
+            </div>
             <p id="i74zm2" class="value-description">MYMI needs robust tracking and evaluation tools to measure child
               development outcomes and program effectiveness.</p>
           </article>
-          <article id="ic8qfu" class="gjs-t-border value-card">
-            <h3 id="ivpkge" class="value-title"><b>Capacity Building</b></h3>
+          <article id="goal-card-capacity-building" class="gjs-t-border value-card">
+            <div class="value-header">
+              <img loading="lazy" alt="Capacity icon" 
+                src="https://api.iconify.design/lucide-graduation-cap.svg?color=%23136f63" class="value-icon" />
+              <h3 class="value-title"><b>Capacity Building</b></h3>
+            </div>
             <p id="i6ayby" class="value-description">Local staff and community members require training to gradually
               assume greater responsibility for project management and operations.</p>
           </article>
@@ -260,13 +341,15 @@
           <p class="donation-cta-paragraph">Your generosity provides safe housing, meals, school fees, and life-giving
             mentorship for children and teens in our community. Every gift makes a difference.</p>
           <div class="donation-cta-buttons-row"><a href="##" class="gjs-t-button donation-primary-button">Donate
-              Now</a><a href="##" class="gjs-t-link donation-secondary-link">See How Funds Are Used</a></div>
+              Now</a>
+            <!-- <a href="##" class="gjs-t-link donation-secondary-link">See How Funds Are Used</a> -->
+          </div>
         </div>
         <div class="donation-cta-image-block">
           <figure class="gjs-t-border donation-figure"><img
               src="https://cdn.grapesjs.com/workspaces/cmfbzqzid1pjey0i3ox56ym7k/assets/b8010a20-fada-4a1d-94da-a0b45fe99efc__kids2.jpg"
-              alt="Children smiling at a community center in Kenya" width="800" height="480" loading="lazy" id="i86c3g"
-              class="donation-image" />
+              alt="Children smiling at a community center in Kenya" width="800" height="480" loading="lazy"
+              id="donation-cta-image" class="donation-image" />
             <figcaption class="donation-caption">Children and youth we love and serve</figcaption>
           </figure>
         </div>
