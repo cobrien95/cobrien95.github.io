@@ -21,20 +21,20 @@
         aria-label="Community Care Initiative – Home" class="gjs-t-link brand-link"><img
           src="https://api.iconify.design/lucide-church.svg?color=%23136f63" alt="Church icon" width="36" height="36"
           loading="lazy" id="iv8sm" class="brand-icon" /><span id="ian2s" class="brand-name">Woanda Community
-          Church</span></a><!-- Desktop navigation -->
+          Church</span></a>      <!-- Desktop navigation -->
       <nav id="iiqk4-nav-desktop-2" aria-label="Primary" class="primary-navigation"><a href="./index.html" id="ibny9-2"
           class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html" id="igl33-2"
-          class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a href="./donations.html" id="ijekps-2"
-          aria-label="Donate to Woanda Community Church" class="gjs-t-button nav-donate-button">Donate</a></nav>
+          class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a></nav>
       <!-- Mobile toggle button -->
+      <button id="iiqk4-toggle" class="mobile-menu-button" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="https://api.iconify.design/lucide-menu.svg?color=%230f172a" alt="Menu" width="20" height="20" class="mobile-menu-icon" />
+      </button>
     </div><!-- Mobile collapsible panel -->
     <div id="iiqk4-panel" aria-hidden="true" class="mobile-nav-panel">
       <div id="ibqt5" class="mobile-nav-inner">
         <div role="menu" aria-label="Primary mobile" id="imm5n" class="mobile-nav-list"><a href="./index.html"
             role="menuitem" id="ik7zx" class="gjs-t-link nav-link-about">About</a><a href="./impact-support.html"
-            role="menuitem" id="iyfzr" class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a><a
-            href="./donations.html" role="menuitem" id="i2vql" aria-label="Donate to Woanda Community Church"
-            class="gjs-t-button nav-donate-button">Donate</a></div>
+            role="menuitem" id="iyfzr" class="gjs-t-link nav-link-impact-active">Impact &amp; Support</a></div>
       </div>
     </div>
     <script id="ik2yv">
@@ -96,7 +96,7 @@
         <div id="ii496j" class="donation-methods-grid">
           <article id="igqm8i" class="gjs-t-border donation-method-card">
             <div id="iezxvn" class="donation-method-header"><img loading="lazy" decoding="async"
-                src="https://api.iconify.design/simple-icons:remitly.svg?color=%230b1324&amp;width=144&amp;height=48"
+                src="./Images/remitly.png"
                 alt="Remitly brand logo" id="i5j2lh" class="donation-method-logo" />
               <h2 id="i7d22b" class="gjs-t-h2 donation-method-title">Remitly</h2>
             </div>
@@ -112,7 +112,7 @@
           </article>
           <article id="i7vkr4" class="gjs-t-border donation-method-card">
             <div id="ik45ve" class="donation-method-header"><img loading="lazy" decoding="async"
-                src="https://api.iconify.design/simple-icons:westernunion.svg?color=%230b1324&amp;width=144&amp;height=48"
+                src="./Images/Western-Union.png"
                 alt="Western Union brand logo" id="ihzynn" class="donation-method-logo" />
               <h2 id="ihkbgk" class="gjs-t-h2 donation-method-title">Western Union</h2>
             </div>
@@ -128,7 +128,7 @@
           </article>
           <article id="ie7p4r" class="gjs-t-border donation-method-card">
             <div id="iq8tsh" class="donation-method-header"><img loading="lazy" decoding="async"
-                src="https://api.iconify.design/simple-icons:mpesa.svg?color=%230b1324&amp;width=144&amp;height=48"
+                src="./Images/m-pesa.png"
                 alt="M-Pesa brand logo" id="ivpc8i" class="donation-method-logo" />
               <h2 id="i08pc8" class="gjs-t-h2 donation-method-title">M-Pesa</h2>
             </div>
@@ -152,13 +152,6 @@
       </div>
     </div>
   </footer>
-  <script>
-    const headerEl = document.getElementById('iiqk4');
-    const toggleBtn = headerEl?.querySelector('.mobile-menu-button');
-    toggleBtn?.addEventListener('click', () => {
-      headerEl.classList.toggle('is-open');
-    });
-  </script>
 </body>
 
 </html>
