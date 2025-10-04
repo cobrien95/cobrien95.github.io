@@ -9,4 +9,17 @@ defaults:
       layout: default
 
 # Custom 404 page
-404: about.html
+404: /404.html
+
+# Site configuration
+title: "Woanda Community Church"
+description: "Supporting orphaned and vulnerable children on Mfangano Island, Kenya through education, healthcare, and community programs."
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
