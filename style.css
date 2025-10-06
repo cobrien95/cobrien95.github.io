@@ -1547,6 +1547,70 @@ video {
     gap: 1.5rem;
 }
 
+/* Sponsorship carousel container */
+#support-card-sponsorship-options-carousel {
+    grid-column: span 12 / span 12;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+/* Mobile carousel for sponsorship section */
+@media (max-width: 768px) {
+    #support-card-sponsorship-options-carousel {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 1rem;
+    }
+
+    #support-card-sponsorship-options-carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    #support-card-sponsorship-options {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 1.5rem !important;
+        padding: 0 1rem;
+        margin: 0 -1rem;
+        min-width: max-content;
+    }
+
+    #i8392q {
+        flex: 0 0 auto;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        padding: 1rem 0.5rem;
+        margin: 0;
+        min-width: 60px;
+        text-align: center;
+        background-color: var(--gjs-t-color-primary);
+        color: white;
+        border-radius: 8px;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sponsorship-options-wrapper {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 1rem !important;
+        flex: 1;
+        min-width: max-content;
+    }
+
+    .sponsorship-card {
+        flex: 0 0 150px !important;
+        scroll-snap-align: start;
+        min-width: 150px;
+        max-width: 150px;
+        padding: 1rem;
+    }
+}
+
 .support-card-financial {
     grid-column: span 6 / span 6;
     padding: 1.5rem;
@@ -4217,29 +4281,25 @@ article[id].gjs-t-border.donation-method-card {
         display: flex;
     }
 
+    /* Mobile: Stack all cards vertically */
     .how-to-support-grid {
         display: flex !important;
-        flex-direction: row !important;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        gap: 1rem !important;
-        padding-bottom: 1rem;
-    }
-
-    .how-to-support-grid::-webkit-scrollbar {
-        display: none;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
     }
 
     .support-card-financial,
     .support-card-partnerships {
-        flex: 0 0 85%;
-        scroll-snap-align: start;
-        grid-column: auto;
-        width: 85% !important;
-        min-width: 85%;
-        max-width: 85% !important;
+        grid-column: span 12 / span 12 !important;
+        width: 100% !important;
+        flex: none !important;
+    }
+
+    /* Sponsorship carousel container */
+    #support-card-sponsorship-options-carousel {
+        grid-column: span 12 / span 12 !important;
+        width: 100% !important;
+        margin-top: 1.5rem !important;
     }
 
     .gjs-t-border.support-card-financial,
@@ -4755,29 +4815,25 @@ article[id].gjs-t-border.donation-method-card {
         grid-column: span 12 / span 12;
     }
 
+    /* Mobile: Stack all cards vertically */
     .how-to-support-grid {
         display: flex !important;
-        flex-direction: row !important;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        gap: 0.75rem !important;
-        padding-bottom: 1rem;
-    }
-
-    .how-to-support-grid::-webkit-scrollbar {
-        display: none;
+        flex-direction: column !important;
+        gap: 1rem !important;
     }
 
     .support-card-financial,
     .support-card-partnerships {
-        flex: 0 0 90%;
-        scroll-snap-align: start;
-        grid-column: auto;
-        width: 90% !important;
-        min-width: 90%;
-        max-width: 90% !important;
+        grid-column: span 12 / span 12 !important;
+        width: 100% !important;
+        flex: none !important;
+    }
+
+    /* Sponsorship carousel container */
+    #support-card-sponsorship-options-carousel {
+        grid-column: span 12 / span 12 !important;
+        width: 100% !important;
+        margin-top: 1.5rem !important;
     }
 
     .gjs-t-border.support-card-financial,
@@ -5159,5 +5215,19 @@ article[id].gjs-t-border.donation-method-card {
     .sponsorship-options-grid {
         grid-template-columns: 1fr;
         gap: 0.75rem;
+    }
+
+    /* Smaller mobile - adjust sponsorship carousel */
+    .sponsorship-card {
+        flex: 0 0 140px !important;
+        min-width: 140px;
+        max-width: 140px;
+        padding: 0.875rem;
+    }
+
+    #i8392q {
+        min-width: 50px;
+        padding: 0.875rem 0.375rem;
+        font-size: 0.875rem;
     }
 }
