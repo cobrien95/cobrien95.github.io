@@ -4310,19 +4310,6 @@ article[id].gjs-t-border.donation-method-card {
         transition: transform 0.3s ease;
     }
 
-    #i8392q.collapsed::after {
-        transform: translateY(-50%) rotate(-45deg);
-    }
-
-    .sponsorship-options-wrapper {
-        max-height: 1000px;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    .sponsorship-options-wrapper.collapsed {
-        max-height: 0;
-    }
 
     .location-figure {
         grid-column: span 12 / span 12;
@@ -4844,19 +4831,6 @@ article[id].gjs-t-border.donation-method-card {
         transition: transform 0.3s ease;
     }
 
-    #i8392q.collapsed::after {
-        transform: translateY(-50%) rotate(-45deg);
-    }
-
-    .sponsorship-options-wrapper {
-        max-height: 1000px;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    .sponsorship-options-wrapper.collapsed {
-        max-height: 0;
-    }
 
     .location-figure {
         grid-column: span 12 / span 12;
